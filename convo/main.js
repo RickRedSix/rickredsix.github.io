@@ -24,10 +24,10 @@ bindMenuButtons();
 */
 
 function init() {
-  alert('Convo Test');  
+  console.log('Convo Test');  
 };
 
-function init()
+init();
 
 
 
