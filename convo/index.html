@@ -2,11 +2,113 @@
 <html>
 <head>
     <title>Convo Selection Test</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">	
+        
+    <style>
+        html {
+            margin: 0;            
+            padding: 0;            
+            min-height: 100%;            
+            height: auto;
+            font-family: 'Helvetica Neue',sans-serif;            
+            background-color: #1DA1F2;    
+        }   
+        
+        body {
+            color: #FFF;    
+        } 
+        
+        .intro {
+            height: auto;
+            width: 80%;
+            margin: 10px auto;
+            margin-top: 50px;
+            display: block;                
+        }
+        
+        .selector-container {
+            height: auto;
+            width: 80%;
+            margin: 30px auto;
+            display: block;    
+        }
+        
+        .p-default {
+            width: 80%;
+            text-align: center;
+            margin : 15px auto;
+            clear: both;
+        }
+        
+        #button {
+            background-color: #FFF;
+            color: #000;
+            font-weight: bold;
+            font-family: 'Helvetica Neue Bold', sans-serif;
+            padding: 12px 24px;
+            font-size: 14px;
+            border-radius: 20px;
+            text-decoration: none;
+            -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+            -webkit-transition-property: background-color;
+            transition-property: background-color; 
+            margin: 0 auto;
+            display: block;
+            width: 20%;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        
+        #button:hover {
+            background-color: #ddd; 
+        }        
+    </style>
+    
 </head>
 
 <body>
     
-	<h1>Convo Test</h1>
+    
+    <h1>Make a choice!</h1>
+    
+	<p class="intro">Select your favourites below and hit the 'Tweet Now' button to share them!</p>
+	     
+	<div class="selector-container">
+
+        <div class="pretty p-default p-curve p-thick">
+            <input id="checkbox-1" type="checkbox" />
+            <div class="state">
+                <label>Option 1 - #Option1</label>
+            </div>
+        </div>
+    
+        <div class="pretty p-default p-curve p-thick">
+            <input id="checkbox-2" type="checkbox" />
+            <div class="state">
+                <label>Option 2 - #Option2</label>
+            </div>
+        </div>
+    
+        <div class="pretty p-default p-curve p-thick">
+            <input id="checkbox-3" type="checkbox" />
+            <div class="state">
+                <label>Option 3 - #Option3</label>
+            </div>
+        </div>
+        
+        <div class="pretty p-default p-curve p-thick">
+            <input id="checkbox-4" type="checkbox" />
+            <div class="state">
+                <label>Option 4 - #Option4</label>
+            </div>
+        </div>                        
+    	
+	</div>
+	
+    <div id="button">Tweet Now</div>
 	     
     <script src="main.js"></script> 
     	     
