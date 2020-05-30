@@ -1,4 +1,4 @@
-function() {
+(function() {
     
     console.log("I'm Here!");
   
@@ -11,4 +11,4 @@ function() {
             console.log(imageLinks[i]); 
     } 			
   
-}()
+})()
