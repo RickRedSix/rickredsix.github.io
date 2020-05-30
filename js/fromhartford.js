@@ -4,11 +4,8 @@
   
 	var imageLinks = document.getElementsByClassName('image-link');
   
-	console.log(imageLinks.length)
+    for (item of imageLinks) { 
+      console.log(item)
+    } 
 	
-
-    for (var i = 0; i < imageLinks.length; i++) { 
-            console.log(imageLinks[i]); 
-    } 			
-  
 })()
