@@ -6,9 +6,9 @@
 
 <body>
     <script>
-        document.onload = function () {
+        window.onload = function () {
             
-            var tweetBase = 'https://twitter.com/intent/tweet?',
+            var tweetBase = 'https://twitter.com/intent/tweet?text=',
                 textArray = [
                     'Southampton win the Champions League',
                     'Leicester City win the Champions League',
@@ -20,7 +20,7 @@
             var tweetText = textArray[Math.floor(Math.random() * textArray.length)];
             
             //go to tweet intent
-            window.location.replace(tweetBase + tweetText);                                    
+            window.location.replace(tweetBase + encodeURI(tweetText));                                    
             
         }
     </script>
